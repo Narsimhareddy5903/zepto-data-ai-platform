@@ -24,7 +24,7 @@ for filename in sorted(os.listdir(docs_folder)):
     if filename.endswith(".txt"):
         file_path = os.path.join(docs_folder, filename)
 
-        with open(file_path, "r", encoding="utf-8") as file:
+        with open(file_path, "r", encoding="utf-8-sig") as file:
             content = file.read().strip()
 
         # 6. Split the document into paragraphs
